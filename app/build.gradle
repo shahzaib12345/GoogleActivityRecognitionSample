@@ -29,4 +29,14 @@ dependencies {
 
     implementation 'com.google.android.gms:play-services-location:17.0.0'
     implementation 'com.google.code.gson:gson:2.8.6'
+
+    //Room Storage
+    implementation "android.arch.persistence.room:runtime:1.1.1"
+    annotationProcessor "android.arch.persistence.room:compiler:1.1.1"
+
+    //Stetho
+    implementation 'com.facebook.stetho:stetho-okhttp3:1.5.1'
+
+    //Pagination
+    implementation 'android.arch.paging:runtime:2.1.0'
 }

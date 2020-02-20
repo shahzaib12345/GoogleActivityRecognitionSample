@@ -2,16 +2,17 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:paddingBottom="@dimen/layout_padding"
     android:paddingLeft="@dimen/layout_padding"
     android:paddingRight="@dimen/layout_padding"
     android:paddingTop="@dimen/layout_padding">
 
-
-
-    <ListView
-        android:id="@+id/activities_listview"
+  <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_activities"
         android:layout_width="match_parent"
+      app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+      android:orientation="vertical"
         android:layout_height="wrap_content" />
 </LinearLayout>
